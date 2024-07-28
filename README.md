@@ -1,4 +1,4 @@
-# Some note about my journey in UNI-VERSE
+# **MY JOURNEY IN THE UNI-VERSE**
 
 ## This is where i will share and update everything i learn, my experience and my planner
 
