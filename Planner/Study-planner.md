@@ -23,10 +23,6 @@
     * Electrochemical
 * Bcuz i don't have the textbook of my subject so we can study through [this](https://www.youtube.com/playlist?list=PLidqqIGKox7WeOKVGHxcd69kKqtwrKl8W) first.
 
-## C ©
-* First approach:
-    * Maybe just this [Brocode](https://www.youtube.com/watch?v=87SH2Cn0s9A) video is enough for me just now :))) 
-* Then i will dive in more later if i free 
 
 
 
