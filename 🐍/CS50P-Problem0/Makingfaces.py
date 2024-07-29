@@ -5,7 +5,6 @@ def main(n):
     elif ":(" in n:
         r = n.replace(":(", "😢")
         return r
-    
     return n
 
 n = input()
