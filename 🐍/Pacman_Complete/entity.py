@@ -85,6 +85,13 @@ class Entity(object):
             directions.append(self.direction * -1)
         return directions
 
+    def getValidDirections(self):
+        directions = []
+        for key in [UP, DOWN, LEFT, RIGHT]:
+            if self.validDirection(key):
+                directions.append(key)
+        return directions
+
     def randomDirection(self, directions):
         return directions[randint(0, len(directions)-1)]
 

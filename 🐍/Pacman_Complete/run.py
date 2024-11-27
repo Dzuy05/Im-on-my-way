@@ -71,7 +71,7 @@ class GameController(object):
         self.mazedata.obj.denyGhostsAccess(self.ghosts, self.nodes)
 
     def startGame_old(self):      
-        self.mazedata.loadMaze(self.level)#######
+        self.mazedata.loadMaze(self.level)
         self.mazesprites = MazeSprites("maze1.txt", "maze1_rotation.txt")
         self.setBackground()
         self.nodes = NodeGroup("maze1.txt")
@@ -115,12 +115,12 @@ class GameController(object):
 
             hand_direction = self.hand.get_direction()
             keyboard_direction = self.pacman.getValidKey()
-            process_hand_direction(hand_direction, self.pacman)
 
-            if not hand_direction or not self.pacman.validDirection(hand_direction):
-                if keyboard_direction and self.pacman.validDirection(keyboard_direction):
-                    self.pacman.desired_direction = keyboard_direction
-                    
+            if keyboard_direction is not None:
+                self.pacman.set_desired_direction(keyboard_direction)
+            elif hand_direction is not None:
+                self.pacman.set_desired_direction(hand_direction)
+
             self.pacman.update(dt)
 
         if self.pacman.alive:
@@ -287,6 +287,3 @@ if __name__ == "__main__":
     game.startGame()
     while True:
         game.update()
-
-
-
